@@ -1,16 +1,33 @@
 {
-  "name": "lab14petshop",
+  "name": "lab14ejercicio1",
   "version": "0.1.0",
-  "description": "Desarrollo usando PostCSS y HTML 5  Laboratorio 14 ADSI Sena, tienda de animalitos",
+  "description": "Desarrollo Ejercicio 1 del Laboratorio 14 de ADSI, tienda de animalitos, usando HTML5 (Jade) y postcss",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frzjac/Laboratorio-14-ADSI-Pet-Shop.git"
+  },
   "keywords": [
     "sena",
     "adsi",
-    "postcss"
+    "postcss",
+    "html5"
   ],
   "author": "Franz Jacanamijoy",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frzjac/Laboratorio-14-ADSI-Pet-Shop/issues"
+  },
+  "homepage": "https://github.com/frzjac/Laboratorio-14-ADSI-Pet-Shop#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-pug": "^3.3.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-nested": "^2.1.0"
+  }
 }
