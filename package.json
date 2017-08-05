@@ -1,0 +1,16 @@
+{
+  "name": "lab14petshop",
+  "version": "0.1.0",
+  "description": "Desarrollo usando PostCSS y HTML 5  Laboratorio 14 ADSI Sena, tienda de animalitos",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "sena",
+    "adsi",
+    "postcss"
+  ],
+  "author": "Franz Jacanamijoy",
+  "license": "ISC"
+}
