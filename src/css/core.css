@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-size:var(--fontSize);
+}
+
+ul,li{
+  text-align: center;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  &:visited{
+    color:initial;
+  }
+}
+
+img{
+  max-width: 100%;
+}

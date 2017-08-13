@@ -1,0 +1,10 @@
+.centradoXY{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.separador-azulClaro{
+  height: calc(100vh / 8);
+  background: var(--azulClaro)
+}

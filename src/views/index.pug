@@ -6,9 +6,34 @@ html(lang="es")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
     link(href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
+    link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Acme")
+    link(href="//fonts.googleapis.com/css?family=Chewy", rel="stylesheet")
+    
     link(href="./css/styles.css", rel="stylesheet")
+  body  
+    header.header
+      .header-menu.centradoXY
+        img(src="./img/hueso.png" alt="").petShop-header-menu-img
+        nav.header-menu-nav
+          li
+            a(href="") Servicios
+          li
+            a(href="") Productos 
+          li
+            a(href="") Guarderia
+          li
+            a(href="") Promociones
+      
+    section.portada.centradoXY
+      .portada-background
+      img(src="./img/dc.png" alt="")
+    section.separador-azulClaro
     
-    
-  body
-    .container 
-    
+    section.contenido
+      section.contenido-noticias
+        article.contenido-noticias-entrada
+          p esta es una entrada
+      section.contenido-contacto
+        p contacto
+    footer.footer
+      h3 este es el footer

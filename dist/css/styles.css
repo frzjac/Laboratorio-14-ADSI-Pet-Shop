@@ -1,3 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-  
+  margin: 0;
+  font-size:16px;
+}
+ul,li{
+  text-align: center;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:visited{
+    color:#000;
+    color:initial;
+  }
+img{
+  max-width: 100%;
+}
+.centradoXY{
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: flex;
+}
+.separador-azulClaro{
+  height: 12.5vh;
+  background: #0097cd
+}
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  color: #fff;
+  height: 30%;
+  text-align: center;  
+}
+.header-menu-img{
+      position: relative;
+    }
+.header-menu-nav{ 
+      position: absolute; 
+      font-family: 'Chewy', cursive;
+      font-size: 1.2em;
+      display: -webkit-box;
+      display: flex;
+      margin-bottom: 1em;
+    }
+.header-menu-nav li{
+        padding: 0.5em 2em;
+      }
+.header-menu-nav li a:hover{
+          border-bottom: solid 1px black;
+        }
+.portada{
+  position: relative;
+  min-height: 100vh;
+  background: #c1b843;
+  background: rgba(193, 184, 67, .4);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;  
+}
+.portada-background{
+    background: url(../img/fondo1.jpeg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+  }
+.portada-background:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;       
+      opacity: 0.75;
+    }
+.contenido{  
+  display: -webkit-box;  
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  background: orange;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1em 2em;  
 }

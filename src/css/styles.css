@@ -1,3 +1,73 @@
-body{
-  
+@import 'variables.css';
+@import 'core.css';
+@import 'misClases.css';
+
+
+
+
+
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  height: 30%;
+  text-align: center;
+  &-menu{      
+    &-img{
+      position: relative;
+    }
+    &-nav{ 
+      position: absolute; 
+      font-family: 'Chewy', cursive;
+      font-size: 1.2em;
+      display: flex;
+      margin-bottom: 1em;     
+      & li{
+        padding: 0.5em 2em;        
+        & a:hover{
+          border-bottom: solid 1px black;
+        }
+      }
+    }
+  }  
+}
+.portada{
+  position: relative;
+  min-height: 100vh;
+  background: rgba(193, 184, 67, 0.4);
+  flex-direction: column;
+  &-background{
+    background: url(../img/fondo1.jpeg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;       
+      opacity: 0.75;
+    }
+  }  
+}
+
+.contenido{  
+  display: flex;
+  justify-content: space-between;
+  background: orange;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1em 2em;  
 }

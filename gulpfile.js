@@ -3,6 +3,8 @@ var pug = require('gulp-pug');
 var postcss = require('gulp-postcss');
 var cssnested = require('postcss-nested');
 var cssnext = require('postcss-cssnext');
+var mixins = require('postcss-mixins');
+var cssImport = require('postcss-import');
 var browserSync = require('browser-sync').create();
 
 // Servidor base de desarrollo
@@ -27,10 +29,10 @@ gulp.task('jade', function () {
 // Tarea para procesar el CSS
 gulp.task('css', function() {
   var procesos = [
-    cssnested,
-    cssnext({
-      browsers:['>5%','ie8']
-    })
+    cssImport(),
+    mixins(),
+    cssnested, 
+    cssnext({ browsers:['> 5%','ie 8']})
   ];
 
   return gulp.src('./src/css/styles.css')
