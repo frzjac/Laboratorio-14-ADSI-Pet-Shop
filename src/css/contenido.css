@@ -1,0 +1,14 @@
+.contenido{  
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1em 2em;
+  
+  &__noticias{    
+    width: calc((100%/3)*2);    
+  }
+  &__contacto{
+    width: calc(100%/3);    
+  }
+}

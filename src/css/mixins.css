@@ -1,0 +1,9 @@
+@define-mixin transicion $duracion, $propiedad:all{
+  transition: $(propiedad) $(duracion) ease;
+  -webkit-transition: $(propiedad) $(duracion) ease;
+}
+
+@define-mixin imagenFondo $url{
+  background:url($url);
+  background-size:cover;
+}

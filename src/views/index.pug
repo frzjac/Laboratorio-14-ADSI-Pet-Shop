@@ -6,14 +6,16 @@ html(lang="es")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     title Document
     link(href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
-    link(rel="stylesheet", href="//fonts.googleapis.com/css?family=Acme")
+    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(href="//fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
+    link(href="//fonts.googleapis.com/css?family=Roboto", rel="stylesheet")    
     link(href="//fonts.googleapis.com/css?family=Chewy", rel="stylesheet")
     
     link(href="./css/styles.css", rel="stylesheet")
   body  
     header.header
       .header-menu.centradoXY
-        img(src="./img/hueso.png" alt="").petShop-header-menu-img
+        img(src="./img/hueso.png" alt="").header-menu-img
         nav.header-menu-nav
           li
             a(href="") Servicios
@@ -30,10 +32,66 @@ html(lang="es")
     section.separador-azulClaro
     
     section.contenido
-      section.contenido-noticias
-        article.contenido-noticias-entrada
-          p esta es una entrada
-      section.contenido-contacto
-        p contacto
+      section.contenido__noticias 
+        //- Entrada uno      
+        article.entrada
+          .entrada__foto.foto1
+          ul.entrada__detalles 
+            li.entrada__detalles__autor
+              a(href="") Franz Jacanamijoy
+            li.entrada__detalles__fecha
+              span 12/agosto/2017
+            li.entrada__detalles__tags 
+              - var tags = ['html','pug','css3','postcss']
+              ul
+                each tag in tags
+                  li 
+                    a(href="#")= tag
+          .entrada__resumen
+            h2.entrada__titulo Esto es una Entrada
+            h3.entrada__subtitulo Este es el subtitulo
+            p.entrada__parrafo 
+              | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
+              | exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
+            a(href="").entrada__link Leer Mas
+        
+        //- Entrada Dos 
+        article.entrada
+          .entrada__foto.foto1
+          ul.entrada__detalles 
+            li.entrada__detalles__autor
+              a(href="") Franz Jacanamijoy
+            li.entrada__detalles__fecha
+              span 12/agosto/2017
+            li.entrada__detalles__tags 
+              - var tags = ['html','pug','css3','postcss']
+              ul
+                each tag in tags
+                  li 
+                    a(href="#")= tag
+          .entrada__resumen
+            h2.entrada__titulo Esto es una Entrada
+            h3.entrada__subtitulo Este es el subtitulo
+            p.entrada__parrafo 
+              | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
+              | exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
+            a(href="").entrada__link Leer Mas
+      //- Seccion de Formuario de Contacto
+      section.contenido__contacto
+        form(action="" method="").contacto
+          h3.contacto__titulo Contactanos
+          h4.contacto__mensaje Dejanos tu mensaje y te responderemos muy pronto
+          fieldset.contacto__fieldset
+            input(placeholder="Tu Nombre.." type="text" tabindex="1" required autofocus).contacto__input
+          fieldset.contacto__fieldset
+            input(placeholder="Tu Correo Electronico.." type="text" tabindex="2" required ).contacto__input
+          fieldset.contacto__fieldset
+            input(placeholder="Tu Telefono.." type="text" tabindex="3" required ).contacto__input
+          fieldset.contacto__fieldset
+            input(placeholder="Tu Direccio.." type="text" tabindex="4" required ).contacto__input
+          fieldset.contacto__fieldset
+            textarea(placeholder="Escribe tu mensaje aqui..." tabindex="5" required).contacto__input.contacto__input--textarea
+          fieldset.contacto__fieldset
+            button(name="enviar" type="submit" data-submit="...Enviando").contacto__button Enviar
     footer.footer
       h3 este es el footer

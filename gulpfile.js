@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var pug = require('gulp-pug');
 var postcss = require('gulp-postcss');
 var cssnested = require('postcss-nested');
+var nestedAncestor = require('postcss-nested-ancestors');
 var cssnext = require('postcss-cssnext');
 var mixins = require('postcss-mixins');
 var cssImport = require('postcss-import');
@@ -31,7 +32,8 @@ gulp.task('css', function() {
   var procesos = [
     cssImport(),
     mixins(),
-    cssnested, 
+    nestedAncestor,
+    cssnested,    
     cssnext({ browsers:['> 5%','ie 8']})
   ];
 

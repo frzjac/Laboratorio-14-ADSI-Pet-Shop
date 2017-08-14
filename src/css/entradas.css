@@ -1,0 +1,162 @@
+.entrada{
+  @mixin transicion var(--duracionAnimacion), height;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
+  margin: 0 auto 1.6%;
+  overflow: hidden;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.45em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  &:hover{
+    ^&__detalles{       
+      left: 0;
+    }
+    ^&__foto{
+      transform: rotate(5deg) scale(1.3);
+    }
+  }
+
+  &__foto{
+    @mixin transicion var(--duracionAnimacion);
+    height: 100%;
+    width: 30%;
+    position: relative;
+    &.foto1{
+      @mixin imagenFondo "http://www.aldia.co/sites/default/files/detallefotohurtoperritos.jpg";
+    }
+  }
+
+  &__detalles{
+    @mixin transicion var(--duracionAnimacion);   
+
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    color: #fff;
+    font-family: "Open Sans";      
+    margin: 0;
+    padding: 10px 15px;
+    height: 200px;
+    position: absolute;
+    top:0;
+    left:-100%;
+    width: 30%;
+    
+    & > li{
+      padding: 3px 0;
+    }
+
+    & li:before, &__tags ul:before{
+      font-family: "FontAwesome";
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    &__autor:before{
+      content: "\f007";
+    }
+    &__fecha:before{
+      content: "\f133";
+    }
+    &__tags{
+      list-style: none;
+      margin:0;
+      padding: 0;
+      ul{
+        &:before{
+          content: "\f02b";
+        }
+      }
+      li{
+        display: inline-block;
+        margin-right: 3px;
+        &:last-child{
+          margin-right:0;
+        }
+      }
+    }
+    & a{
+      color: inherit;
+      border-bottom: 1px dotted;
+      &:hover{
+        color:var(--fondoBody);
+      }
+    }
+  }
+
+  &__resumen{
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    width: 70%;
+    z-index: 0;
+    &:before{
+      transform: skewX(-5deg);
+      content: "";
+      background: #fff;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      left: -15px;
+      top: 0;
+      bottom: 0;
+    }
+  }    
+
+  &__titulo{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1em;
+    margin: 0 0 10px 0;
+  }
+
+  &__subtitulo{
+    color: var(--gris);
+    font-family: "Open Sans";
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 1.2% 0
+  }
+
+  &__parrafo{
+    position: relative;
+    margin: 0;
+    padding-top: 1em;
+    text-align: justify;
+    &:after{
+      content: " ";
+      background: #494e4d;
+      height: 5px;
+      width: 5em;
+      position: absolute;
+      top: 6px;
+      left: 0;
+    }
+  }
+
+  &__link{
+
+    color: red;
+    float: right;
+    margin-bottom: 1em;
+    &:after{
+      @mixin transicion var(--duracionAnimacion);
+      content: "\f061";
+      font-family: "FontAwesome";
+      margin-left: -10px;
+      opacity: 0;
+      vertical-align: middle;
+    }
+    &:hover:after{
+      margin-left: 5px;
+      opacity: 1;
+    }
+  }
+}

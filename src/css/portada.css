@@ -1,0 +1,25 @@
+.portada{
+  position: relative;
+  min-height: 100vh;
+  background: rgba(193, 184, 67, 0.4);
+  flex-direction: column;
+  &-background{
+    background: url(../img/fondo1.jpeg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;       
+      opacity: 0.75;
+    }
+  }  
+}

@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
     <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Acme"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <link href="//fonts.googleapis.com/css?family=Chewy" rel="stylesheet"/>
     <link href="./css/styles.css" rel="stylesheet"/>
   </head>
   <body> 
     <header class="header">
-      <div class="header-menu centradoXY"><img class="petShop-header-menu-img" src="./img/hueso.png" alt=""/>
+      <div class="header-menu centradoXY"><img class="header-menu-img" src="./img/hueso.png" alt=""/>
         <nav class="header-menu-nav">
           <li><a href="">Servicios</a></li>
           <li><a href="">Productos </a></li>
@@ -26,13 +28,77 @@
     </section>
     <section class="separador-azulClaro"></section>
     <section class="contenido">
-      <section class="contenido-noticias">
-        <article class="contenido-noticias-entrada">
-          <p>esta es una entrada</p>
+      <section class="contenido__noticias"> 
+        <article class="entrada">
+          <div class="entrada__foto foto1"></div>
+          <ul class="entrada__detalles"> 
+            <li class="entrada__detalles__autor"><a href="">Franz Jacanamijoy</a></li>
+            <li class="entrada__detalles__fecha"><span>12/agosto/2017</span></li>
+            <li class="entrada__detalles__tags"> 
+              <ul>
+                <li> <a href="#">html</a></li>
+                <li> <a href="#">pug</a></li>
+                <li> <a href="#">css3</a></li>
+                <li> <a href="#">postcss</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="entrada__resumen">
+            <h2 class="entrada__titulo">Esto es una Entrada</h2>
+            <h3 class="entrada__subtitulo">Este es el subtitulo</h3>
+            <p class="entrada__parrafo">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
+              exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
+            </p><a class="entrada__link" href="">Leer Mas</a>
+          </div>
+        </article>
+        <article class="entrada">
+          <div class="entrada__foto foto1"></div>
+          <ul class="entrada__detalles"> 
+            <li class="entrada__detalles__autor"><a href="">Franz Jacanamijoy</a></li>
+            <li class="entrada__detalles__fecha"><span>12/agosto/2017</span></li>
+            <li class="entrada__detalles__tags"> 
+              <ul>
+                <li> <a href="#">html</a></li>
+                <li> <a href="#">pug</a></li>
+                <li> <a href="#">css3</a></li>
+                <li> <a href="#">postcss</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="entrada__resumen">
+            <h2 class="entrada__titulo">Esto es una Entrada</h2>
+            <h3 class="entrada__subtitulo">Este es el subtitulo</h3>
+            <p class="entrada__parrafo">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
+              exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
+            </p><a class="entrada__link" href="">Leer Mas</a>
+          </div>
         </article>
       </section>
-      <section class="contenido-contacto">
-        <p>contacto</p>
+      <section class="contenido__contacto">
+        <form class="contacto" action="" method="">
+          <h3 class="contacto__titulo">Contactanos</h3>
+          <h4 class="contacto__mensaje">Dejanos tu mensaje y te responderemos muy pronto</h4>
+          <fieldset class="contacto__fieldset">
+            <input class="contacto__input" placeholder="Tu Nombre.." type="text" tabindex="1" required="required" autofocus="autofocus"/>
+          </fieldset>
+          <fieldset class="contacto__fieldset">
+            <input class="contacto__input" placeholder="Tu Correo Electronico.." type="text" tabindex="2" required="required"/>
+          </fieldset>
+          <fieldset class="contacto__fieldset">
+            <input class="contacto__input" placeholder="Tu Telefono.." type="text" tabindex="3" required="required"/>
+          </fieldset>
+          <fieldset class="contacto__fieldset">
+            <input class="contacto__input" placeholder="Tu Direccio.." type="text" tabindex="4" required="required"/>
+          </fieldset>
+          <fieldset class="contacto__fieldset">
+            <textarea class="contacto__input contacto__input--textarea" placeholder="Escribe tu mensaje aqui..." tabindex="5" required="required"></textarea>
+          </fieldset>
+          <fieldset class="contacto__fieldset">
+            <button class="contacto__button" name="enviar" type="submit" data-submit="...Enviando">Enviar</button>
+          </fieldset>
+        </form>
       </section>
     </section>
     <footer class="footer">

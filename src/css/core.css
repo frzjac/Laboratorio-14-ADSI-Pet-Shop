@@ -7,6 +7,8 @@
 body{
   margin: 0;
   font-size:var(--fontSize);
+  background: var(--fondoBody);
+  font-family: 'Open Sans', sans-serif;
 }
 
 ul,li{
@@ -17,7 +19,7 @@ ul,li{
 a{
   text-decoration: none;
   &:visited{
-    color:initial;
+    color: inherit;
   }
 }
 
