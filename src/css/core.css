@@ -9,10 +9,14 @@ body{
   font-size:var(--fontSize);
   background: var(--fondoBody);
   font-family: 'Open Sans', sans-serif;
+  color:var(--colorTexto);
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
 }
 
 ul,li{
-  text-align: center;
+  
   list-style: none;
 }
 

@@ -21,6 +21,34 @@
     ^&__foto{
       transform: rotate(5deg) scale(1.3);
     }
+    &.derecha ^&__foto{
+      transform: rotate(-5deg) scale(1.3);
+    }
+    &.derecha{
+      ^^&__detalles{
+        right: 0;
+      }
+    }
+  }
+
+  &.derecha{
+    ^&__detalles{
+      right: -100%;
+      left: inherit;
+    }
+
+    ^&__resumen{
+      float: right;
+      &:before{
+        transform: skewX(5deg);
+        right: -15px;
+        left: inherit;
+      }
+    }
+
+    ^&__foto{
+      order: 3;
+    }
   }
 
   &__foto{
@@ -29,7 +57,13 @@
     width: 30%;
     position: relative;
     &.foto1{
-      @mixin imagenFondo "http://www.aldia.co/sites/default/files/detallefotohurtoperritos.jpg";
+      @mixin imagenFondo "../img/perro-dominante.jpg";
+    }
+    &.foto2{
+      @mixin imagenFondo "../img/gato.jpg";
+    }
+    &.foto3{
+      @mixin imagenFondo "../img/niñosMascotas.jpg";
     }
   }
 

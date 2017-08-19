@@ -1,0 +1,56 @@
+extends ./assets/layout.pug
+include ./assets/mixins.pug
+
+
+block content  
+	+menuSticky
+	.container.servicios
+		h2.servicios__presentacion.margin-top Servicios integrales para tu mascota	
+		p.servicios__introduccion Sabemos que se ha convertido en un miembro más de la familia, y que por eso quieres lo mejor para él. Te ofrecemos un amplio catálogo de servicios para que no debas preocuparte por nada.
+		.row
+			.container
+				.servicios__linea.margin-top
+					img.servicios__img(src="./img/icon1.png" alt="")
+					h2.servicios__titulo Línea médica
+					.separador.azul1
+					p.servicios__resumen.justify_text Ponemos a tu disposición los más avanzados métodos para la salud animal.
+					ul.servicios__lista.justify_text
+						li.servicios__lista--item Consulta veterinaria tradicional.
+						li.servicios__lista--item Consulta veterinaria especializada en diversas áreas.
+						li.servicios__lista--item Servicio de cirugía para mascotas.
+						li.servicios__lista--item Vacunación de animales.
+						li.servicios__lista--item Implantación de microchip.
+				.servicios__linea.margin-top
+					img.servicios__img(src="./img/icob.png" alt="")
+					h2.servicios__titulo Línea comportamental
+					.separador.rojo1
+					p.servicios__resumen.justify_text Analizamos problemas de comportamiento y establecemos terapias.
+					ul.servicios__lista.justify_text
+						li.servicios__lista--item Estudio de problemas de comportamiento de mascotas.
+						li.servicios__lista--item Conductas de agresividad en animales.
+						li.servicios__lista--item Asesoría sobre lenguaje canino y felino.
+		.row
+			.container
+				.servicios__linea.margin-top
+					img.servicios__img(src="./img/ico3.png" alt="")
+					h2.servicios__titulo Línea estética y petshop
+					.separador.lila1
+					p.servicios__resumen.justify_text Todas las facilidades para que luzca hermoso y en perfecto estado.
+					ul.servicios__lista.justify_text
+						li.servicios__lista--item Baño completo de mascotas.
+						li.servicios__lista--item Limpieza de oídos para gatos y perros.
+						li.servicios__lista--item Corte de uñas para mascotas.
+						li.servicios__lista--item Baños especializados y medicados.
+						li.servicios__lista--item Baño seco para animales con productos especializados para aplicar sin necesidad de enjuague.
+						li.servicios__lista--item Productos de alimentación para animales.
+						li.servicios__lista--item Juguetes y accesorios para mascotas.
+				.servicios__linea.margin-top
+					img.servicios__img(src="./img/ico4.png" alt="")
+					h2.servicios__titulo Guardería para Mascotas
+					.separador.verde1
+					p.servicios__resumen.justify_text Cuidado personalizado en instalaciones adaptadas.
+					ul.servicios__lista.justify_text
+						li.servicios__lista--item Guardería canina con espacios diseñados para ellos.
+						li.servicios__lista--item Guardería felina con todas las comodidades.
+						li.servicios__lista--item Tarifas de guardería diurnas, nocturnas o por horas.
+				

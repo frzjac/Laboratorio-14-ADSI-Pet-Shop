@@ -3,6 +3,7 @@
   min-height: 100vh;
   background: rgba(193, 184, 67, 0.4);
   flex-direction: column;
+  width: 100%;
   &-background{
     background: url(../img/fondo1.jpeg);
     position: absolute;

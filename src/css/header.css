@@ -27,5 +27,43 @@
         }
       }
     }
-  }  
+  }   
+}
+
+.headerSticky{
+  background: var(--azulClaro);
+  margin: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  color: white;
+  width: 100vw;
+  z-index: 20;
+  height: fit-content;
+  &__logo{
+    width: 7.5em;
+  }
+  &__nav{
+    &--items{
+      align-items: center;
+      display: flex;
+      flex-flow: row wrap;
+      height: 5rem;
+      justify-content: center;
+      list-style: none outside none;
+      margin:0;
+      padding: 0;
+    }
+    &--item{
+      margin: 0 2em;
+      border-bottom: solid 2px transparent;
+      &:hover{
+        border-bottom: solid 2px #fff;
+        
+      }
+      &:hover:first-child{
+        border: none;
+      }
+    }
+  }
 }

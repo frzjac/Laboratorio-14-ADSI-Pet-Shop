@@ -1,0 +1,22 @@
+extends ./assets/layout.pug
+include ./assets/mixins.pug
+
+block content
+	+menuSticky
+	.container.guarderia
+		.row.margin-top
+			h2.guarderia__presentacion.margin-bottom Guarderia Para tus Mascotas
+			p.guarderia__texto.parrafo
+				|Tu mascota podrá disfrutar de todas las actividades, mientras estas por fuera de casa. 
+				| Este servicio es ideal para aquellas personas que trabajan todo el día y no pueden cuidar de sus mascotas. Nosotros nos encargamos de cuidar a tu hijo peludo mientras estas por fuera de casa, le damos todo el amor y le brindamos diversión y esparcimiento durante todo el día.
+			p.guarderia__texto.parrafo
+				| Contamos con planes mensuales, en los cuales recogemos a tu mascota de lunes a sábado 
+				| en la puerta de tu casa. Todos nuestros planes incluyen transporte en la mañana y la tarde, 
+				| actividades recreativas, caminata ecológica, piscina, paseo al rio, fotos, reporte etológico 
+				| y evaluación en conducta.
+		.row.margin-top
+			.container.guarderia__img
+				img.guarderia__img--item(src="./img/hotel.jpg")
+				img.guarderia__img--item(src="./img/guerderia.jpg")
+		
+		

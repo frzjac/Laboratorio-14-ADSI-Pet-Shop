@@ -12,7 +12,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('server', function() {
   browserSync.init({
     server:{
-      baseDir: './dist'
+      baseDir: './dist/'
     }
   });
 });
@@ -23,7 +23,7 @@ gulp.task('jade', function () {
   .pipe(pug({
     pretty: true
   }))
-  .pipe(gulp.dest('./dist'))
+  .pipe(gulp.dest('./dist/'))
   .pipe(browserSync.stream())
 });
 

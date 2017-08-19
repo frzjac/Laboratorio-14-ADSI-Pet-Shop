@@ -1,0 +1,75 @@
+extends ./assets/layout.pug
+include ./assets/mixins.pug
+include ./assets/blocks.pug
+
+block content
+	+menuSticky
+	.container.margin-top
+		//- Entrada uno      
+		article.entrada
+			.entrada__foto.foto1
+			ul.entrada__detalles 
+				li.entrada__detalles__autor
+					a(href="") Franz Jacanamijoy
+				li.entrada__detalles__fecha
+					span 12/agosto/2017
+				li.entrada__detalles__tags 
+					- var tags = ['html','pug','css3','postcss']
+					ul
+						each tag in tags
+							li 
+								a(href="#")= tag
+			.entrada__resumen
+				h2.entrada__titulo ¿Cómo educar a un perro dominante?
+				h3.entrada__subtitulo Cuando tienes un perro dominate
+				p.entrada__parrafo 
+					| Existen canes que son, por naturaleza, obedientes y tranquilos. Por otro lado, 
+					| están los perros dominantes. Estos se caracterizan por su gran carácter y 
+					| personalidad. Este tipo de peludos,...
+				a(href="perro-dominante.html").entrada__link Leer Mas
+		
+		//- Entrada Dos 
+		article.entrada.derecha
+			.entrada__foto.foto2
+			ul.entrada__detalles 
+				li.entrada__detalles__autor
+					a(href="") Franz Jacanamijoy
+				li.entrada__detalles__fecha
+					span 12/agosto/2017
+				li.entrada__detalles__tags 
+					- var tags = ['html','pug','css3','postcss']
+					ul
+						each tag in tags
+							li 
+								a(href="#")= tag
+			.entrada__resumen
+				h2.entrada__titulo Consejos básicos para adiestrar a nuestro gato
+				h3.entrada__subtitulo Todo para empezar a educar a tu gato
+				p.entrada__parrafo 
+					| Los gatos no son iguales que los perros. Es algo que todos sabemos. 
+					| Entre sus muchas diferencias está la distinta relación que establecen 
+					| con sus amos. Mientras que los perros son unos animales mucho más sociales 
+					| siempre dispuestos para jugar y agradar a las personas, los gatos son 
+					| mucho más independientes y su principal característica
+				a(href="gato.html").entrada__link Leer Mas
+
+		//- Entrada uno      
+		article.entrada
+			.entrada__foto.foto3
+			ul.entrada__detalles 
+				li.entrada__detalles__autor
+					a(href="") Franz Jacanamijoy
+				li.entrada__detalles__fecha
+					span 12/agosto/2017
+				li.entrada__detalles__tags 
+					- var tags = ['html','pug','css3','postcss']
+					ul
+						each tag in tags
+							li 
+								a(href="#")= tag
+			.entrada__resumen
+				h2.entrada__titulo Mascotas que podemos regalar a un niño pequeño
+				h3.entrada__subtitulo Que mascota regalar a un niño
+				p.entrada__parrafo 
+					| El verano, al igual que las Navidades o la Semana Santa, es un momento propicio del año para regalar una mascota a los más pequeños de la casa. Una mascota no es un juguete. Es un ser vivo que aporta diversión a los hijos pequeños y debe ir acompañado de la necesaria responsabilidad
+				a(href="mascota-nino.html").entrada__link Leer Mas

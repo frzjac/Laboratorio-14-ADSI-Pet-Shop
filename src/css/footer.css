@@ -1,0 +1,15 @@
+.footer{
+  background: rgba(15, 13, 13, 0.78);
+  display: block;
+  text-align: center;
+  color:#fff;
+  padding: 0.5em;
+  bottom: 0;
+  width: 100%;
+  align-self: flex-end;
+  margin-top: 2em;
+  &__titulo,&__info{
+    display: block;
+    margin-top:0.5em;
+  }
+}

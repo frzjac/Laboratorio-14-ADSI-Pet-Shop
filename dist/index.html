@@ -10,16 +10,18 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
     <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
     <link href="//fonts.googleapis.com/css?family=Chewy" rel="stylesheet"/>
+    <link href="//fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"/>
     <link href="./css/styles.css" rel="stylesheet"/>
   </head>
-  <body> 
+  <body>
     <header class="header">
       <div class="header-menu centradoXY"><img class="header-menu-img" src="./img/hueso.png" alt=""/>
         <nav class="header-menu-nav">
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Productos </a></li>
-          <li><a href="">Guarderia</a></li>
-          <li><a href="">Promociones</a></li>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos </a></li>
+          <li><a href="guarderia.html">Guarderia</a></li>
+          <li><a href="blog.html">Blog </a></li>
         </nav>
       </div>
     </header>
@@ -44,16 +46,17 @@
             </li>
           </ul>
           <div class="entrada__resumen">
-            <h2 class="entrada__titulo">Esto es una Entrada</h2>
-            <h3 class="entrada__subtitulo">Este es el subtitulo</h3>
+            <h2 class="entrada__titulo">¿Cómo educar a un perro dominante?</h2>
+            <h3 class="entrada__subtitulo">Cuando tienes un perro dominate</h3>
             <p class="entrada__parrafo">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
-              exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
-            </p><a class="entrada__link" href="">Leer Mas</a>
+               Existen canes que son, por naturaleza, obedientes y tranquilos. Por otro lado, 
+              están los perros dominantes. Estos se caracterizan por su gran carácter y 
+              personalidad. Este tipo de peludos,...
+            </p><a class="entrada__link" href="perro-dominante.html">Leer Mas</a>
           </div>
         </article>
-        <article class="entrada">
-          <div class="entrada__foto foto1"></div>
+        <article class="entrada derecha">
+          <div class="entrada__foto foto2"></div>
           <ul class="entrada__detalles"> 
             <li class="entrada__detalles__autor"><a href="">Franz Jacanamijoy</a></li>
             <li class="entrada__detalles__fecha"><span>12/agosto/2017</span></li>
@@ -67,33 +70,61 @@
             </li>
           </ul>
           <div class="entrada__resumen">
-            <h2 class="entrada__titulo">Esto es una Entrada</h2>
-            <h3 class="entrada__subtitulo">Este es el subtitulo</h3>
+            <h2 class="entrada__titulo">Consejos básicos para adiestrar a nuestro gato</h2>
+            <h3 class="entrada__subtitulo">Todo para empezar a educar a tu gato</h3>
             <p class="entrada__parrafo">
-               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
-              exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
-            </p><a class="entrada__link" href="">Leer Mas</a>
+               Los gatos no son iguales que los perros. Es algo que todos sabemos. 
+              Entre sus muchas diferencias está la distinta relación que establecen 
+              con sus amos. Mientras que los perros son unos animales mucho más sociales 
+              siempre dispuestos para jugar y agradar a las personas, los gatos son 
+              mucho más independientes y su principal característica
+            </p><a class="entrada__link" href="gato.html">Leer Mas</a>
+          </div>
+        </article>
+        <article class="entrada">
+          <div class="entrada__foto foto3"></div>
+          <ul class="entrada__detalles"> 
+            <li class="entrada__detalles__autor"><a href="">Franz Jacanamijoy</a></li>
+            <li class="entrada__detalles__fecha"><span>12/agosto/2017</span></li>
+            <li class="entrada__detalles__tags"> 
+              <ul>
+                <li> <a href="#">html</a></li>
+                <li> <a href="#">pug</a></li>
+                <li> <a href="#">css3</a></li>
+                <li> <a href="#">postcss</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="entrada__resumen">
+            <h2 class="entrada__titulo">Mascotas que podemos regalar a un niño pequeño</h2>
+            <h3 class="entrada__subtitulo">Que mascota regalar a un niño</h3>
+            <p class="entrada__parrafo">
+               El verano, al igual que las Navidades o la Semana Santa, es un momento propicio del año para regalar una mascota a los más pequeños de la casa. Una mascota no es un juguete. Es un ser vivo que aporta diversión a los hijos pequeños y debe ir acompañado de la necesaria responsabilidad</p><a class="entrada__link" href="mascota-nino.html">Leer Mas</a>
           </div>
         </article>
       </section>
       <section class="contenido__contacto">
         <form class="contacto" action="" method="">
-          <h3 class="contacto__titulo">Contactanos</h3>
-          <h4 class="contacto__mensaje">Dejanos tu mensaje y te responderemos muy pronto</h4>
+          <h3 class="contacto__titulo">Solicita tu cita</h3>
           <fieldset class="contacto__fieldset">
-            <input class="contacto__input" placeholder="Tu Nombre.." type="text" tabindex="1" required="required" autofocus="autofocus"/>
+            <input class="contacto__input" placeholder="Nombre de tu Mascota.." type="text" tabindex="1" required="required" autofocus="autofocus"/>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <input class="contacto__input" placeholder="Tu Correo Electronico.." type="text" tabindex="2" required="required"/>
+            <input class="contacto__input" placeholder="Edad de tu Mascota.." type="number" tabindex="2" required="required"/>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <input class="contacto__input" placeholder="Tu Telefono.." type="text" tabindex="3" required="required"/>
+            <input class="contacto__input" placeholder="Raza de tu Mascota.." type="text" tabindex="3" required="required"/>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <input class="contacto__input" placeholder="Tu Direccio.." type="text" tabindex="4" required="required"/>
+            <input class="contacto__input" placeholder="Fecha de Nacimientos.." type="date" tabindex="4" required="required"/>
           </fieldset>
           <fieldset class="contacto__fieldset">
-            <textarea class="contacto__input contacto__input--textarea" placeholder="Escribe tu mensaje aqui..." tabindex="5" required="required"></textarea>
+            <input class="contacto__input" placeholder="Hora de la Cita.." type="time" tabindex="5" required="required"/>
+            <fieldset class="contacto__fieldset"></fieldset>
+            <input class="contacto__input" placeholder="Nombre del Dueño" type="text" tabindex="6" required="required"/>
+          </fieldset>
+          <fieldset class="contacto__fieldset">
+            <textarea class="contacto__input contacto__input--textarea" placeholder="Escribe algun mensaje..." tabindex="7" required="required"></textarea>
           </fieldset>
           <fieldset class="contacto__fieldset">
             <button class="contacto__button" name="enviar" type="submit" data-submit="...Enviando">Enviar</button>
@@ -102,7 +133,7 @@
       </section>
     </section>
     <footer class="footer">
-      <h3>este es el footer</h3>
+      <h3 class="footer__titulo">Contactenos</h3><span class="footer__info">Linea Gratuita 01 8000 000015</span><span class="footer__info">Correo: preguntas@caninosyfelinos.com </span>
     </footer>
   </body>
 </html>

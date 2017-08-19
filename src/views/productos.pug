@@ -1,0 +1,16 @@
+extends ./assets/layout.pug
+include ./assets/mixins.pug
+
+block content  
+	+menuSticky
+	.construccion
+		.margin-top
+			img.construccion__logo(src="./img/dc.png" alt="")
+			img.full_width(src="./img/bg-co.png" alt="")
+			.container.margin-top
+				.construccion__img
+					img(src="./img/en_construccion.jpg" alt="")
+				.construccion__texto.centradoXY
+					.construccion__texto--sub Nuestro equipo de desarrolladores esta <b>renovando</b> nuestra tienda
+					.construccion__texto--imp Esperala muy pronto
+			

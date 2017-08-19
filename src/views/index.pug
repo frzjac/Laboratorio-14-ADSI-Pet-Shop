@@ -1,97 +1,113 @@
-<!DOCTYPE html>
-html(lang="es")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    title Document
-    link(href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css", rel="stylesheet")
-    link(rel="stylesheet", href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css")
-    link(href="//fonts.googleapis.com/css?family=Open+Sans", rel="stylesheet")
-    link(href="//fonts.googleapis.com/css?family=Roboto", rel="stylesheet")    
-    link(href="//fonts.googleapis.com/css?family=Chewy", rel="stylesheet")
-    
-    link(href="./css/styles.css", rel="stylesheet")
-  body  
-    header.header
-      .header-menu.centradoXY
-        img(src="./img/hueso.png" alt="").header-menu-img
-        nav.header-menu-nav
-          li
-            a(href="") Servicios
-          li
-            a(href="") Productos 
-          li
-            a(href="") Guarderia
-          li
-            a(href="") Promociones
-      
-    section.portada.centradoXY
-      .portada-background
-      img(src="./img/dc.png" alt="")
-    section.separador-azulClaro
-    
-    section.contenido
-      section.contenido__noticias 
-        //- Entrada uno      
-        article.entrada
-          .entrada__foto.foto1
-          ul.entrada__detalles 
-            li.entrada__detalles__autor
-              a(href="") Franz Jacanamijoy
-            li.entrada__detalles__fecha
-              span 12/agosto/2017
-            li.entrada__detalles__tags 
-              - var tags = ['html','pug','css3','postcss']
-              ul
-                each tag in tags
-                  li 
-                    a(href="#")= tag
-          .entrada__resumen
-            h2.entrada__titulo Esto es una Entrada
-            h3.entrada__subtitulo Este es el subtitulo
-            p.entrada__parrafo 
-              | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
-              | exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
-            a(href="").entrada__link Leer Mas
-        
-        //- Entrada Dos 
-        article.entrada
-          .entrada__foto.foto1
-          ul.entrada__detalles 
-            li.entrada__detalles__autor
-              a(href="") Franz Jacanamijoy
-            li.entrada__detalles__fecha
-              span 12/agosto/2017
-            li.entrada__detalles__tags 
-              - var tags = ['html','pug','css3','postcss']
-              ul
-                each tag in tags
-                  li 
-                    a(href="#")= tag
-          .entrada__resumen
-            h2.entrada__titulo Esto es una Entrada
-            h3.entrada__subtitulo Este es el subtitulo
-            p.entrada__parrafo 
-              | Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ex quam voluptatibus. Officia nulla maxime, qui nisi nihil cum, 
-              | exercitationem, itaque reiciendis veniam amet delectus accusantium ad in asperiores inventore?
-            a(href="").entrada__link Leer Mas
-      //- Seccion de Formuario de Contacto
-      section.contenido__contacto
-        form(action="" method="").contacto
-          h3.contacto__titulo Contactanos
-          h4.contacto__mensaje Dejanos tu mensaje y te responderemos muy pronto
-          fieldset.contacto__fieldset
-            input(placeholder="Tu Nombre.." type="text" tabindex="1" required autofocus).contacto__input
-          fieldset.contacto__fieldset
-            input(placeholder="Tu Correo Electronico.." type="text" tabindex="2" required ).contacto__input
-          fieldset.contacto__fieldset
-            input(placeholder="Tu Telefono.." type="text" tabindex="3" required ).contacto__input
-          fieldset.contacto__fieldset
-            input(placeholder="Tu Direccio.." type="text" tabindex="4" required ).contacto__input
-          fieldset.contacto__fieldset
-            textarea(placeholder="Escribe tu mensaje aqui..." tabindex="5" required).contacto__input.contacto__input--textarea
-          fieldset.contacto__fieldset
-            button(name="enviar" type="submit" data-submit="...Enviando").contacto__button Enviar
-    footer.footer
-      h3 este es el footer
+extends ./assets/layout.pug
+block content
+	header.header
+		.header-menu.centradoXY
+			img(src="./img/hueso.png" alt="").header-menu-img
+			nav.header-menu-nav
+				li
+					a(href="/") Inicio
+				li
+					a(href="servicios.html") Servicios
+				li
+					a(href="productos.html") Productos 
+				li
+					a(href="guarderia.html") Guarderia
+				li
+					a(href="blog.html") Blog 
+	section.portada.centradoXY
+		.portada-background
+		img(src="./img/dc.png" alt="")
+	section.separador-azulClaro
+	
+	section.contenido
+		section.contenido__noticias 
+			//- Entrada uno      
+			article.entrada
+				.entrada__foto.foto1
+				ul.entrada__detalles 
+					li.entrada__detalles__autor
+						a(href="") Franz Jacanamijoy
+					li.entrada__detalles__fecha
+						span 12/agosto/2017
+					li.entrada__detalles__tags 
+						- var tags = ['html','pug','css3','postcss']
+						ul
+							each tag in tags
+								li 
+									a(href="#")= tag
+				.entrada__resumen
+					h2.entrada__titulo ¿Cómo educar a un perro dominante?
+					h3.entrada__subtitulo Cuando tienes un perro dominate
+					p.entrada__parrafo 
+						| Existen canes que son, por naturaleza, obedientes y tranquilos. Por otro lado, 
+						| están los perros dominantes. Estos se caracterizan por su gran carácter y 
+						| personalidad. Este tipo de peludos,...
+					a(href="perro-dominante.html").entrada__link Leer Mas
+			
+			//- Entrada Dos 
+			article.entrada.derecha
+				.entrada__foto.foto2
+				ul.entrada__detalles 
+					li.entrada__detalles__autor
+						a(href="") Franz Jacanamijoy
+					li.entrada__detalles__fecha
+						span 12/agosto/2017
+					li.entrada__detalles__tags 
+						- var tags = ['html','pug','css3','postcss']
+						ul
+							each tag in tags
+								li 
+									a(href="#")= tag
+				.entrada__resumen
+					h2.entrada__titulo Consejos básicos para adiestrar a nuestro gato
+					h3.entrada__subtitulo Todo para empezar a educar a tu gato
+					p.entrada__parrafo 
+						| Los gatos no son iguales que los perros. Es algo que todos sabemos. 
+						| Entre sus muchas diferencias está la distinta relación que establecen 
+						| con sus amos. Mientras que los perros son unos animales mucho más sociales 
+						| siempre dispuestos para jugar y agradar a las personas, los gatos son 
+						| mucho más independientes y su principal característica
+					a(href="gato.html").entrada__link Leer Mas
+
+			//- Entrada uno      
+			article.entrada
+				.entrada__foto.foto3
+				ul.entrada__detalles 
+					li.entrada__detalles__autor
+						a(href="") Franz Jacanamijoy
+					li.entrada__detalles__fecha
+						span 12/agosto/2017
+					li.entrada__detalles__tags 
+						- var tags = ['html','pug','css3','postcss']
+						ul
+							each tag in tags
+								li 
+									a(href="#")= tag
+				.entrada__resumen
+					h2.entrada__titulo Mascotas que podemos regalar a un niño pequeño
+					h3.entrada__subtitulo Que mascota regalar a un niño
+					p.entrada__parrafo 
+						| El verano, al igual que las Navidades o la Semana Santa, es un momento propicio del año para regalar una mascota a los más pequeños de la casa. Una mascota no es un juguete. Es un ser vivo que aporta diversión a los hijos pequeños y debe ir acompañado de la necesaria responsabilidad
+					a(href="mascota-nino.html").entrada__link Leer Mas
+			
+		//- Seccion de Formuario de Contacto
+		section.contenido__contacto
+			form(action="" method="").contacto
+				h3.contacto__titulo Solicita tu cita
+				fieldset.contacto__fieldset
+					input(placeholder="Nombre de tu Mascota.." type="text" tabindex="1" required autofocus).contacto__input
+				fieldset.contacto__fieldset
+					input(placeholder="Edad de tu Mascota.." type="number" tabindex="2" required ).contacto__input
+				fieldset.contacto__fieldset
+					input(placeholder="Raza de tu Mascota.." type="text" tabindex="3" required ).contacto__input
+				fieldset.contacto__fieldset
+					input(placeholder="Fecha de Nacimientos.." type="date" tabindex="4" required ).contacto__input
+				fieldset.contacto__fieldset
+					input(placeholder="Hora de la Cita.." type="time" tabindex="5" required ).contacto__input
+					fieldset.contacto__fieldset
+					input(placeholder="Nombre del Dueño" type="text" tabindex="6" required ).contacto__input
+				fieldset.contacto__fieldset
+					textarea(placeholder="Escribe algun mensaje..." tabindex="7" required).contacto__input.contacto__input--textarea
+				fieldset.contacto__fieldset
+					button(name="enviar" type="submit" data-submit="...Enviando").contacto__button Enviar
+		

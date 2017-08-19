@@ -1,0 +1,46 @@
+.contacto{
+  border-radius: 3px;
+  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.3);
+  background: var(--fondoClaro);
+  max-width: 95%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0.5em;
+  &__titulo{
+    color: #F96;
+    font-weight: 400;    
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: .5em;
+    
+  }
+  &__fieldset{
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+  &__input{
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+    width:100%;
+    border:1px solid #CCC;
+    background:#FFF;
+    margin:0 0 5px;
+    padding:10px;
+    &:hover{
+      transition:border-color 0.3s ease-in-out;
+	    border:1px solid #AAA;
+    }    
+  }
+
+  &__button{
+    background:var(--azulClaro);
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding: 1em 0;
+    border-radius: 5px;
+  }
+  
+}

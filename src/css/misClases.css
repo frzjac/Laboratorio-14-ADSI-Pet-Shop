@@ -1,3 +1,17 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: var(--anchoDefinido);
+  max-width: var(--anchoDefinido);
+  
+}
+
+.container-block{
+  display: block;
+  text-align: center;
+}
 .centradoXY{
   justify-content: center;
   align-items: center;
@@ -6,5 +20,62 @@
 
 .separador-azulClaro{
   height: calc(100vh / 8);
-  background: var(--azulClaro)
+  background: var(--azulClaro);
+  width:100vw;
 }
+
+.row{
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+}
+
+.separador{
+  
+  border-top-width: 2px;
+  width: 50%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  padding: 0;
+  list-style: none;
+  height: 2px;
+  &.azul1{
+    background: var(--azulClaro);
+  }
+  &.rojo1{
+    background: var(--rojo1);
+  }
+  &.lila1{
+    background: var(--lila1);
+  }
+  &.verde1{
+    background: var(--verde1);
+  }
+}
+
+.margin-top{
+  margin-top: 2em;
+}
+
+.margin-bottom{
+  margin-bottom: 1.5em;
+}
+
+.justify_text{
+  text-align: justify;
+}
+
+.full_width{
+  width: 100%;
+}
+
+.parrafo{
+  margin-top: 0.5em;
+  line-height: 1.2em;
+  text-align: justify;
+}
+

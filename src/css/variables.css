@@ -1,11 +1,18 @@
 :root{
-  --fondoBody:#cbeafb;
+  --anchoDefinido:1100px;
+
+  --fondoBody:#f9f9f9;
   --fondoClaro:#fff;
   --azulClaro:#0097cd;
   --gris:#8a8a8a;
+  --rojo1:rgb(222, 48, 42);
+  --lila1: rgb(236, 43, 141);
+  --verde1:rgb(115, 213, 1);
   --fontSize: 16px;
   --duracionAnimacion:0.3s;
+  --colorTexto:rgb(83,83,83);
 }
+
 
 /**  Media Querys Personalizadas  **/
 @custom-media --anchoMinimo (min-width: 600px);
